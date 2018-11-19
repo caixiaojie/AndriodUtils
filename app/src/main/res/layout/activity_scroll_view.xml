@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ScrollViewActivity">
+    <com.yjhs.andriodutils.TranslucentScrollView
+        android:id="@+id/tScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/img2"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1000dp"></LinearLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </com.yjhs.andriodutils.TranslucentScrollView>
+
+    <com.yjhs.andriodutils.TranslucentActionBar
+        android:id="@+id/transactionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.yjhs.andriodutils.TranslucentActionBar>
+</RelativeLayout>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CoordinateActivity">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="208dp">
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_weight="1"
+            app:expandedTitleMarginStart="20dp"
+            app:contentScrim="@color/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:scaleType="fitXY"
+                android:src="@mipmap/_3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <android.support.v7.widget.Toolbar
+                app:layout_collapseMode="pin"
+                android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="48dp">
+                <TextView
+                    android:textSize="20sp"
+                    android:textColor="#fff"
+                    android:text="@string/app_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+    <android.support.v4.widget.NestedScrollView
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:padding="10dp"
+                android:orientation="vertical"
+                android:background="#fff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.yjhs.andriodutils.image_utils.CircleImageView
+                    android:src="@mipmap/_2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" />
+                <com.yjhs.andriodutils.image_utils.RounderImageView
+                    android:layout_marginTop="10dp"
+                    android:src="@mipmap/_2"
+                    app:roundWidth="5dp"
+                    app:roundHeight="5dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" />
+                <com.yjhs.andriodutils.image_utils.RotateImageView
+                    android:layout_width="50dp"
+                    android:src="@mipmap/_2"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="50dp" />
+                <com.yjhs.andriodutils.image_utils.SimpleTagImageView
+                    app:simple_tag_textSize="14sp"
+                    app:simple_tag_enable="true"
+                    android:src="@mipmap/_2"
+                    app:simple_tag_text="标签"
+                    app:simple_corner_distance="10dp"
+                    app:simple_tag_background_color="@color/colorAccent"
+                    app:simple_tag_orientation="left_top"
+                    app:simple_tag_textColor="@color/colorPrimary"
+                    app:simple_tag_width="50dp"
+                    app:simple_tag_round_radius="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp" />
+
+                <com.yjhs.andriodutils.progress.CircleProgress xmlns:app="http://schemas.android.com/apk/res-auto"
+
+                    android:layout_marginTop="10dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" />
+                <com.yjhs.andriodutils.progress.DonutProgress
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" />
+                <com.yjhs.andriodutils.progress.ArcProgress
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" />
+
+
+                <com.yjhs.andriodutils.text.AdaptiveTextView
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="房间阿狸的减肥绿卡考虑到了健康"
+                    android:layout_width="100dp"
+                    android:layout_height="20dp" />
+
+                <com.yjhs.andriodutils.text.AlignTextView
+                    android:text="到静安寺了空间里打开，的撒空间浪费肯德基讲道，理减肥的离开。撒娇离开阿娇里的。水开房间爱离开将到拉萨放假了肯定是"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="到静安寺了空间里打开，的撒空间浪费肯德基讲道，理减肥的离开。撒娇离开阿娇里的。水开房间爱离开将到拉萨放假了肯定是"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content" />
+                
+                <com.yjhs.andriodutils.text.ClearEditText
+                    android:hint="@string/app_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+
+                <ImageView
+                    android:layout_margin="20dp"
+                    android:id="@+id/img1"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp" />
+
+                <ImageView
+                    android:layout_margin="20dp"
+                    android:id="@+id/img2"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp" />
+                <ImageView
+                    android:scaleType="fitXY"
+                    android:layout_margin="20dp"
+                    android:id="@+id/img3"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp" />
+
+                <com.yjhs.andriodutils.image_utils.RounderImageView
+                    android:layout_marginTop="10dp"
+                    android:src="@mipmap/_2"
+                    app:roundWidth="5dp"
+                    app:roundHeight="5dp"
+                    android:id="@+id/img4"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:background="@color/colorPrimaryDark"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"></LinearLayout>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>
